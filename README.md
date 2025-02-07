@@ -1,2 +1,2 @@
 # Philip-Portfolio-hemsida
-This is my own webbsite 
+Detta är källkoden till min portfolio-hemsida där jag visar upp mina projekt, färdigheter och erfarenheter. Hemsidan har en responsiv design, ett projektgalleri och ett kontaktformulär.  För att köra sidan lokalt, klona repot, gå in i mappen och kör:  git clone https://github.com/Philip27312731/portfolio.git cd portfolio npm install npm run dev  Hemsidan är byggd med HTML, CSS och JavaScript. För frågor eller feedback, kontakta mig via e-post eller sociala medier.
