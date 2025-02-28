@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Min Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Philips Portfolio</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html">Projekt</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Kontakta mig</h1>
+        <p>Har du frågor eller vill diskutera ett potentiellt samarbete? Hör av dig!</p>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Skicka ett meddelande</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Ämne</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Meddelande</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Skicka</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Kontaktuppgifter</h3>
+            <div class="info-item">
+                <strong>E-post:</strong> kontakt@philip.bernin.se
+            </div>
+            <div class="info-item">
+                <strong>Telefon:</strong> 070-123 45 67
+            </div>
+            <div class="info-item">
+                <strong>Plats:</strong> Göteborg, Sverige
+            </div>
+            
+            <div class="social-links">
+                <h3>Följ mig</h3>
+                <a href="https://github.com/Philip27312731" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/dittnamn" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/dittanvändarnamn" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name === '' || email === '' || subject === '' || message === '') {
+                alert('Alla fält måste fyllas i.');
+                return false;
+            }
+            
+            // Enkel validering av e-post
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Ange en giltig e-postadress.');
+                return false;
+            }
+            
+            alert('Tack för ditt meddelande! Jag återkommer så snart som möjligt.');
+            return false; // Förhindra att formuläret skickas (ersätt med faktisk funktionalitet)
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

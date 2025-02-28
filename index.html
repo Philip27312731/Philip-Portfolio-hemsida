@@ -28,9 +28,25 @@
     <section class="hero">
         <h1>Välkommen till min Portfolio</h1>
         <p>Här kan du läsa mer om mig och mina projekt</p>
+        
+        <!-- Scroll Down Button -->
+        <div class="scroll-down" id="scroll-down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </div>
     </section>
 
     <script src="js/script.js"></script>
+    <script>
+        // Scroll down funktion
+        document.getElementById('scroll-down').addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
 </body>
 </html>
