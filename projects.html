@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt - Min Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Philips Portfolio</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="projects.html">Projekt</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Mina Projekt</h1>
+        <p>En samling av mina senaste arbeten</p>
+    </section>
+
+    <div class="projects-container">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="alla">Alla</button>
+            <button class="filter-btn" data-filter="webbdesign">Webbdesign</button>
+            <button class="filter-btn" data-filter="grafik">Grafisk Design</button>
+            <button class="filter-btn" data-filter="utveckling">Utveckling</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+            <!-- Projekt kommer att laddas här med JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Philip Bernin</h3>
+                <p>Webbutvecklare & Designer</p>
+                <p>Göteborg, Sverige</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Snabblänkar</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="projects.html">Projekt</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>E-post: kontakt@philip.bernin.se</p>
+                <p>Telefon: 070-123 45 67</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Sociala medier</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Philip27312731" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/dittnamn" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/dittanvändarnamn" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Philip Bernin. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
